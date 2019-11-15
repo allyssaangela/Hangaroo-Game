@@ -1,0 +1,11 @@
+secretWord = str(input("Enter Secret Word: "))
+lettersGuessed = input("Guess a Letter: ")
+
+def isWordGuessed (secretWord, lettersGuessed):
+        for letters in secretWord:
+            x = letters in secretWord
+            if x == letters in lettersGuessed:
+                print ("true!")
+            return x
+        
+print (isWordGuessed(secretWord, lettersGuessed))
